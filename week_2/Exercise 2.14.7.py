@@ -1,6 +1,7 @@
-current_time = 2
+time_now_1 = input ('What is the time now?')
+time_now = int (time_now_1)
 
-time_until_alarm = 51
+hours_to_wait_1 = input ('How long to wait for the alarm? :')
+hours_to_wait = int(hours_to_wait_1)
 
-final_answer = (current_time + time_until_alarm ) % 24
-
+print ((hours_to_wait % 24) + time_now)
